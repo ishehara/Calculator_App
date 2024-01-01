@@ -49,10 +49,11 @@ class MainActivity : AppCompatActivity() {
         }
         btnDivition.setOnClickListener(){
 
-            val input1 = inputNum1.text.toString().toInt()
-            val input2 = inputNum2.text.toString().toInt()
+            val input1 = inputNum1.text.toString().toFloat()
+            val input2 = inputNum2.text.toString().toFloat()
 
-            textAnswer.text = (input1 / input2).toFloat().toString()
+            var result = input1 / input2
+            textAnswer.text = result.toString()
 
         }
 
